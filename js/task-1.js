@@ -1,6 +1,8 @@
 function makeTransaction(quantity, pricePerDroid) {
-    totalPrice = Number(quantity) * Number(pricePerDroid);
-    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
-    
+  totalPrice = Number(quantity) * Number(pricePerDroid);
+  return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 }
 
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
