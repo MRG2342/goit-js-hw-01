@@ -1,5 +1,10 @@
+"use strict";
+
 function getShippingMessage(country, price, deliveryFee) {
-  totalPrice = Number(price) + Number(deliveryFee);
+    
+  const priceCalc = Number(price);
+  const deliveryFeeCalc = Number(deliveryFee);
+  const totalPrice = priceCalc + deliveryFeeCalc;
   return `Shipping to ${country} will cost ${totalPrice} credits`;
 }
 
